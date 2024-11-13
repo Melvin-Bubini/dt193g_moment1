@@ -26,17 +26,23 @@
 
 // HERO IMAGE
 .hero {
-    background-image: url('https://via.placeholder.com/1920x1080'); /* Ersätt med din bild */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-    background-color: white;
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.startHero {
+    background-image: url("/assets/pics/624e27fde335d49e2dd3c6b75c6027a3.jpeg");
+}
+
+.bootstrapHero {
+    background-image: url("/assets/pics/ba465451b38bddc705e9d628955b2211dbba7c9c-cover.png");  
 }
 
 .hero-content {

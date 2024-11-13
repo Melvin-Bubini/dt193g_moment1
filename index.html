@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moment 1 DT193G</title>
     <link href="/css/custom.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/pics/favicon.ico" type="image/x-icon">
 </head>
@@ -30,7 +30,8 @@
                             <a class="nav-link active" aria-current="page" href="#">HEM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ramverk1.html">RAMVERK 1</a>
+                            <!-- ändra namn för ramverk till ramverkets namn i alla menyer -->
+                            <a class="nav-link" href="ramverk1.html">BOOTSTRAP</a> 
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="ramverk2.html">RAMVERK 2</a>
@@ -48,7 +49,7 @@
                         <a class="nav-link active" aria-current="page" href="#">HEM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ramverk1.html">RAMVERK 1</a>
+                        <a class="nav-link" href="ramverk1.html">BOOTSTRAP</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ramverk2.html">RAMVERK 2</a>
@@ -62,16 +63,17 @@
     </nav>
 
     <!-- HERO IMAGE -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="display-4">Välkommen!</h1>
-            <p class="lead">Se mina svar på frågorna</p>
-            <a href="#answers-section" class="btn btn-primary btn-lg" id="scroll-btn">Läs mer</a>
+    <section class="hero startHero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-4">Välkommen!</h1>
+                <p class="lead">Se mina svar på frågorna</p>
+                <a href="#answers-section" class="btn btn-primary btn-lg" id="scroll-btn">Läs mer</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- TEXTAREA -->
     <div class="container my-4" id="answers-section">
         <div class="row g-3">
             <div class="col-12 col-lg-6">
@@ -136,10 +138,16 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="text-center mt-3 border-top mt-3">
-        <h5>Skapad och publicerad av Melvin.</h5>
-        <h5> Skicka gärna feedback via <a href="#">email</a> eller <a data-bs-toggle="offcanvas"
-                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">formulär</a></h5>
+        <div class="p-3">
+            <h5>Skapad och publicerad av Melvin.</h5>
+            <h5> Skicka gärna feedback via
+                <a href="mailto:mebu2300@studenter.miun.se">email</a> eller
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">formulär</a>
+            </h5>
+        </div>
+
 
         <div class="offcanvas offcanvas-start" tabindex="1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
