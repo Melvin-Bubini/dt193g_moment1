@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/pics/favicon.ico" type="image/x-icon">
 </head>
 
 <body data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg border-bottom border-body sticky-top" data-bs-theme="dark" >
+    <!-- NAVIGERING -->
+    <nav class="navbar navbar-expand-lg border-body sticky-top " data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Melvin</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+            <a class="navbar-brand" href="index.html"><img src="assets/pics/standardLogo.svg" alt="Logo"></a>
+            <button class="navbar-toggler d-lg-none btn-dark" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
             <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -39,7 +41,6 @@
                     </ul>
                 </div>
             </div>
-
             <!-- För större skärmar -->
             <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -60,31 +61,116 @@
         </div>
     </nav>
 
-    <h1>Uppgiften</h1>
-    <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque ipsam nesciunt, porro
-        ducimus molestiae corporis nostrum. Nam corporis voluptatem modi qui voluptas cupiditate, eaque amet
-        exercitationem! Asperiores fuga excepturi eum eligendi libero, nisi accusamus maxime necessitatibus iure eaque
-        praesentium, delectus reprehenderit voluptatum, expedita laboriosam qui ex exercitationem repudiandae itaque
-        vitae repellendus optio cum? Itaque libero dolores error, deserunt corporis nam repudiandae, necessitatibus
-        magni exercitationem, illo quae nostrum quia consequuntur voluptates quas? Illo expedita in consequuntur ipsam
-        hic, aperiam nam. Iusto recusandae unde quam maiores nulla saepe ea rem consequuntur mollitia suscipit
-        perspiciatis, eum voluptatibus sunt odio omnis quo repellat dolorem obcaecati quia excepturi quos, distinctio
-        voluptas aperiam. Magni dolores explicabo modi nihil perferendis, nulla architecto omnis inventore officia
-        consequuntur accusantium harum temporibus quod eius sunt animi minus at nostrum beatae? Maxime, rerum unde
-        architecto laboriosam pariatur tempore iure a quia fugiat praesentium facere sit repellat at ea fuga aliquid
-        quam nesciunt doloribus ratione! Nemo tenetur minus architecto blanditiis, ullam, necessitatibus illo dolor
-        laborum non itaque incidunt! Id minima ducimus ut ex suscipit corporis accusamus illo laboriosam obcaecati,
-        asperiores cumque, unde cum in ullam repudiandae. Beatae earum eaque numquam porro eos nesciunt! Velit est
-        magnam pariatur accusantium praesentium autem perspiciatis.</p>
-    <h1>Ramverk</h1>
-    <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente alias recusandae facilis
-        repellat deserunt optio dolorum itaque aut atque enim ipsa accusantium minus totam impedit earum perspiciatis,
-        eligendi similique aliquid deleniti. Labore illum iusto, reprehenderit nobis placeat fugit nulla dolor,
-        laudantium exercitationem quaerat ab aspernatur beatae dignissimos officiis suscipit minima, laboriosam non
-        consectetur omnis similique. Cupiditate incidunt atque neque ullam perspiciatis nobis, sint nemo rem, eaque
-        dolorem eveniet necessitatibus voluptatem ipsum. Dolore inventore, molestias deserunt earum doloribus
-        praesentium non, laboriosam minima autem quisquam delectus necessitatibus aperiam fugit error placeat obcaecati
-        nam architecto labore quidem. Ipsum eius alias dolorem delectus.</p>
+    <!-- HERO IMAGE -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="display-4">Välkommen!</h1>
+            <p class="lead">Se mina svar på frågorna</p>
+            <a href="#answers-section" class="btn btn-primary btn-lg" id="scroll-btn">Läs mer</a>
+        </div>
+    </div>
+</section>
+
+    <div class="container my-4" id="answers-section">
+        <div class="row g-3">
+            <div class="col-12 col-lg-6">
+                <h1 class="text-center">Uppgiften</h1>
+                <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque ipsam
+                    nesciunt, porro
+                    ducimus molestiae corporis nostrum. Nam corporis voluptatem modi qui voluptas cupiditate, eaque amet
+                    exercitationem! Asperiores fuga excepturi eum eligendi libero, nisi accusamus maxime necessitatibus
+                    iure
+                    eaque
+                    praesentium, delectus reprehenderit voluptatum, expedita laboriosam qui ex exercitationem
+                    repudiandae
+                    itaque
+                    vitae repellendus optio cum? Itaque libero dolores error, deserunt corporis nam repudiandae,
+                    necessitatibus
+                    magni exercitationem, illo quae nostrum quia consequuntur voluptates quas? Illo expedita in
+                    consequuntur
+                    ipsam
+                    hic, aperiam nam. Iusto recusandae unde quam maiores nulla saepe ea rem consequuntur mollitia
+                    suscipit
+                    perspiciatis, eum voluptatibus sunt odio omnis quo repellat dolorem obcaecati quia excepturi quos,
+                    distinctio
+                    voluptas aperiam. Magni dolores explicabo modi nihil perferendis, nulla architecto omnis inventore
+                    officia
+                    consequuntur accusantium harum temporibus quod eius sunt animi minus at nostrum beatae? Maxime,
+                    rerum
+                    unde
+                    architecto laboriosam pariatur tempore iure a quia fugiat praesentium facere sit repellat at ea fuga
+                    aliquid
+                    quam nesciunt doloribus ratione! Nemo tenetur minus architecto blanditiis, ullam, necessitatibus
+                    illo
+                    dolor
+                    laborum non itaque incidunt! Id minima ducimus ut ex suscipit corporis accusamus illo laboriosam
+                    obcaecati,
+                    asperiores cumque, unde cum in ullam repudiandae. Beatae earum eaque numquam porro eos nesciunt!
+                    Velit
+                    est
+                    magnam pariatur accusantium praesentium autem perspiciatis.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h1 class="text-center">Ramverk</h1>
+                <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente alias
+                    recusandae
+                    facilis
+                    repellat deserunt optio dolorum itaque aut atque enim ipsa accusantium minus totam impedit earum
+                    perspiciatis,
+                    eligendi similique aliquid deleniti. Labore illum iusto, reprehenderit nobis placeat fugit nulla
+                    dolor,
+                    laudantium exercitationem quaerat ab aspernatur beatae dignissimos officiis suscipit minima,
+                    laboriosam
+                    non
+                    consectetur omnis similique. Cupiditate incidunt atque neque ullam perspiciatis nobis, sint nemo
+                    rem,
+                    eaque
+                    dolorem eveniet necessitatibus voluptatem ipsum. Dolore inventore, molestias deserunt earum
+                    doloribus
+                    praesentium non, laboriosam minima autem quisquam delectus necessitatibus aperiam fugit error
+                    placeat
+                    obcaecati
+                    nam architecto labore quidem. Ipsum eius alias dolorem delectus.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-3 border-top mt-3">
+        <h5>Skapad och publicerad av Melvin.</h5>
+        <h5> Skicka gärna feedback via <a href="#">email</a> eller <a data-bs-toggle="offcanvas"
+                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">formulär</a></h5>
+
+        <div class="offcanvas offcanvas-start" tabindex="1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Feedback-formulär</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Berätta gärna för oss om din upplevese och vad du tyckte om sidan. All feedback är välkommen!
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Vi kommer inte att dela din email</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Meddelande</label>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="customRange">Vad var din upplevelse 1-5</label>
+                        <input type="range" class="custom-range" min="0" max="5" step="1" id="customRange">
+                    </div>
+                    <div class="mb-3">
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+    </footer>
     <script src="./js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 

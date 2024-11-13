@@ -6,3 +6,8 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("transparent");
     }
 });
+
+document.getElementById('scroll-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.querySelector('#answers-section').scrollIntoView({behavior: 'smooth'});
+});
