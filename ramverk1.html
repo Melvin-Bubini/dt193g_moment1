@@ -77,38 +77,125 @@
     <!-- En undersida med information om ramverket, med länk till ramverkets webbplats.
 Beskriv vad du tycker är bra med ramverket, och om det finns några saker du tycker är mindre bra.
 Tabell med minst fyra fält, och minst fem rader med data.
-Formulär för att lägga till data. -->
+Formulär för att lägga till data. input-fält, textarea, checkbox, och select-lista-->
 
     <div class="container my-4" id="answers-section">
+        <!-- Första raden -->
         <div class="row g-3">
+            <!-- Textsektion 1 -->
             <div class="col-12 col-lg-6">
                 <h1 class="text-center">Information och <a href="https://getbootstrap.com/">Bootstrap</a></h1>
                 <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque ipsam
-                    nesciunt, porro
-                    ducimus molestiae corporis nostrum. Nam corporis voluptatem modi qui voluptas cupiditate, eaque amet
-                    exercitationem! Asperiores fuga excepturi eum eligendi libero, nisi accusamus maxime necessitatibus
-                    iure
-                    eaque
-                    praesentium, delectus reprehenderit voluptatum, expedita laboriosam qui ex exercitationem
-                    repudiandae
-                    itaque
-                </p>
+                    nesciunt, porro ducimus molestiae corporis nostrum. Nam corporis voluptatem modi qui voluptas
+                    cupiditate, eaque amet exercitationem! Asperiores fuga excepturi eum eligendi libero, nisi
+                    accusamus maxime necessitatibus iure eaque praesentium, delectus reprehenderit voluptatum,
+                    expedita laboriosam qui ex exercitationem repudiandae itaque.</p>
             </div>
+
+            <!-- Textsektion 2 -->
             <div class="col-12 col-lg-6">
                 <h1 class="text-center">Mina åsikter om Bootstrap</h1>
                 <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque ipsam
-                    nesciunt, porro
-                    ducimus molestiae corporis nostrum. Nam corporis voluptatem modi qui voluptas cupiditate, eaque amet
-                    exercitationem! Asperiores fuga excepturi eum eligendi libero, nisi accusamus maxime necessitatibus
-                    iure
-                    eaque
-                    praesentium, delectus reprehenderit voluptatum, expedita laboriosam qui ex exercitationem
-                    repudiandae
-                    itaque
-                </p>
+                    nesciunt, porro ducimus molestiae corporis nostrum. Nam corporis voluptatem modi qui voluptas
+                    cupiditate, eaque amet exercitationem! Asperiores fuga excepturi eum eligendi libero, nisi
+                    accusamus maxime necessitatibus iure eaque praesentium, delectus reprehenderit voluptatum,
+                    expedita laboriosam qui ex exercitationem repudiandae itaque.</p>
+            </div>
+        </div>
+
+        <!-- Andra raden -->
+        <div class="row g-3 mt-5">
+            <!-- Tabellsektion -->
+            <div class="col-12 col-lg-6">
+                <table class="table table-striped table-hover border-top p-3" id="userTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Förnamn</th>
+                            <th scope="col">Ålder</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Datum</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userDetailsTBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>10</td>
+                            <td>Mark@Olsson.se</td>
+                            <td>2024-12-1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>46</td>
+                            <td>jacob@Karlsson.se</td>
+                            <td>2024-05-13</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>35</td>
+                            <td>Larry@Olsson.se</td>
+                            <td>2024-04-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Peter</td>
+                            <td>25</td>
+                            <td>Peter@Olsson.se</td>
+                            <td>2024-11-22</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Karl</td>
+                            <td>65</td>
+                            <td>Karl@Persson.se</td>
+                            <td>2024-11-5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Formulärsektion -->
+            <div class="col-12 col-lg-6">
+                <form class="border-top p-3" id="userForm">
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label">Förnamn</label>
+                        <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Ålder</label>
+                        <input type="number" min="1" max="100" class="form-control" id="age">
+                    </div>
+                    <div class="mb-3">
+                        <label for="floatingTextarea" class="form-label">Om dig</label>
+                        <textarea class="form-control" placeholder="Berätta om dig"
+                            id="floatingTextarea"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="frameworkSelect" class="form-label">Vilket är det bästa ramverket?</label>
+                        <select class="form-select" aria-label="Ramverk" id="frameworkSelect">
+                            <option value="Bootstrap">Bootstrap</option>
+                            <option value="Tailwind">Tailwind</option>
+                            <option value="Bulma">Bulma</option>
+                            <option value="Animate">Animate</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox">
+                            <label class="form-check-label" for="checkbox">
+                                Har du provat fler ramverk än dessa?
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Lägg till</button>
+                </form>
             </div>
         </div>
     </div>
+
+
 
     <!-- FOOTER -->
     <footer class="text-center mt-3 border-top mt-3">
@@ -116,7 +203,8 @@ Formulär för att lägga till data. -->
             <h5>Skapad och publicerad av Melvin.</h5>
             <h5> Skicka gärna feedback via
                 <a href="mailto:mebu2300@studenter.miun.se">email</a> eller
-                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">formulär</a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">formulär</a>
             </h5>
         </div>
 
