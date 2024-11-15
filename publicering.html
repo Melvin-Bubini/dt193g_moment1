@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 1 DT193G</title>
+    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/pics/favicon.ico" type="image/x-icon">
+</head>
+
+<body data-bs-theme="dark">
+    <!-- NAVIGERING -->
+    <nav class="navbar navbar-expand-lg border-body sticky-top " data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/pics/standardLogo.svg" alt="Logo"></a>
+            <button class="navbar-toggler d-lg-none btn-dark" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Melvin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ramverk1.html">BOOTSTRAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ramverk2.html">RAMVERK 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="publicering.html">PUBLICERING</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- För större skärmar -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ramverk1.html">BOOTSTRAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ramverk2.html">RAMVERK 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="publicering.html">PUBLICERING</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO IMAGE -->
+    <section class="hero githubHero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-4">Publicering</h1>
+                <p class="lead">Information och åsikter om publicering</p>
+                <a href="#answers-section" class="btn btn-primary btn-lg" id="scroll-btn">Läs mer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beskriv den publicerings-plattform du valt för att publicera dina webbplats.
+Ta med saker som kod-stöd (vilka programmerings-språk som går att använda), kostnad, för- och nackdelar och andra saker du tycker är utmärkande.
+Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost. -->
+
+    <div class="container my-4" id="answers-section">
+        <!-- Första raden -->
+        <div class="row g-3">
+            <!-- Textsektion 1 -->
+            <div class="col-12 col-lg-6">
+                <h1 class="text-center">Information om <a href="https://docs.github.com/en/pages">GitHub Pages</a></h1>
+                <p class="lh-base">GitHub Pages är en kostnadsfri tjänst från GitHub som låter dig publicera statiska
+                    webbplatser direkt från ett GitHub-repository. Tjänsten är särskilt användbar för personliga
+                    projekt, portföljer eller dokumentationssidor och är huvudsakligen avsedd för statiskt innehåll.
+                    Eftersom GitHub Pages är byggt för statiska webbplatser, stöder det främst front-end-språk och vissa
+                    verktyg för statiska sidor. HTML, CSS, JavaScript är de grundläggande teknikerna för statiska
+                    webbplatser och stöds fullt
+                    ut på GitHub Pages. Du kan använda vanlig JavaScript eller exempelvis React (efter att ha kompilerat
+                    med verktyg som Webpack). Eftersom GitHub Pages bara hanterar statiska filer, finns det inget stöd
+                    för back-end-kod som exempelvis PHP, Python eller Node.js. Server-skript eller databasfunktioner kan
+                    inte köras här.</p>
+            </div>
+
+            <!-- Textsektion 2 -->
+            <div class="col-12 col-lg-6">
+                <h1 class="text-center">För- och nackdelar</h1>
+                <p class="lh-base">Fördelarna är att de är kostnadsfritt. Det är helt gratis att använda för både
+                    publika och privata repositories.
+                    Det är enkelt att komma igång med för att snabbt publicera en statisk webbplats.
+                    Kodstöd för statiska sidor med HTML, CSS, JavaScript och statiska sajtgeneratorer som Jekyll.
+                    Sidan uppdateras automatiskt när du pushar ändringar till ditt repository.
+                    GitHub Pages är fri från reklam, till skillnad från vissa andra gratistjänster.
+                    Några nackdelar är att det endast är statiska webbplatser. Det stöder inte server-skript eller
+                    back-end-teknologier som PHP eller Node.js, vilket begränsar funktionaliteten.
+                    Ingen möjlighet till dynamisk datalagring direkt på sidan och större projekt kan behöva mer
+                    flexibilitet än vad GitHub Pages erbjuder,
+                    särskilt om interaktivitet krävs.</p>
+            </div>
+        </div>
+
+        <!-- Andra raden -->
+        <div class="row g-3 mt-5">
+            <!-- Textsektion 3 -->
+            <div class="col-12 col-lg-6 mx-auto">
+                <h1 class="text-center">Arbetssätt</h1>
+                <p class="lh-base">För att publicera en webbplats med GitHub Pages börjar du med att skapa ett nytt
+                    repository på GitHub, vilket fungerar som en lagringsplats för webbplatsens filer. Om du vill att
+                    webbplatsen ska vara offentlig kan du skapa ett publikt repository. Privata repositories kan också
+                    publiceras via GitHub Pages, men det kräver ett GitHub Pro-konto.
+                    När repositoryt är skapat kan du ladda upp projektets filer, som HTML, CSS, JavaScript, och bilder.
+                    Filerna kan du ladda upp direkt på GitHub eller via Git om du föredrar att arbeta lokalt på din
+                    dator. För att sedan aktivera GitHub Pages går du in i repositoryts inställningar och letar upp
+                    sektionen "GitHub Pages." Här väljer du vilken branch och eventuell undermapp som
+                    GitHub ska använda som källa för din webbplats. När detta är sparat skapas en liveversion av din
+                    webbplats inom några minuter.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-center mt-3 border-top mt-3">
+        <div class="p-3">
+            <h5>Skapad och publicerad av Melvin.</h5>
+            <h5> Skicka gärna feedback via
+                <a href="mailto:mebu2300@studenter.miun.se">email</a> eller
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">formulär</a>
+            </h5>
+        </div>
+
+
+        <div class="offcanvas offcanvas-start" tabindex="1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Feedback-formulär</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Berätta gärna för oss om din upplevese och vad du tyckte om sidan. All feedback är välkommen!
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Vi kommer inte att dela din email</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Meddelande</label>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="customRange">Vad var din upplevelse 1-5</label>
+                        <input type="range" class="custom-range" min="0" max="5" step="1" id="customRange">
+                    </div>
+                    <div class="mb-3">
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+    </footer>
+    <script src="./js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
