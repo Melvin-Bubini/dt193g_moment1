@@ -31,8 +31,9 @@ document.getElementById("tailwindUserForm").addEventListener('submit', function 
     // Ta upp värden som lagts in i formuläret
     const firstname = document.getElementById('firstname').value;
     const age = document.getElementById('age').value;
-    const framework = document.getElementById('frameworkSelect').value;
     const textarea = document.getElementById('floatingTextarea').value;
+    const framework = document.getElementById('frameworkSelect').value;
+
 
     const userTable = document.getElementById('tailwindUserTable').querySelector('tbody');
     const newRow = document.createElement('tr');
@@ -45,8 +46,8 @@ document.getElementById("tailwindUserForm").addEventListener('submit', function 
         <td class="py-2 px-4 border-b border-gray-700 text-gray-300">${userTable.rows.length + 1}</td>
         <td class="py-2 px-4 border-b border-gray-700 text-gray-300">${firstname}</td>
         <td class="py-2 px-4 border-b border-gray-700 text-gray-300">${age}</td>
-        <td class="py-2 px-4 border-b border-gray-700 text-gray-300">${framework}</td>
         <td class="py-2 px-4 border-b border-gray-700 text-gray-300">${textarea}</td>
+        <td class="py-2 px-4 border-b border-gray-700 text-gray-300">${framework}</td>
     `;
 
     // Append nya raden till tabellen
@@ -54,4 +55,18 @@ document.getElementById("tailwindUserForm").addEventListener('submit', function 
 
     // Rensar formuläret
     event.target.reset();
+});
+
+const openFormBtn = document.getElementById('openFormBtn');
+const closeFormBtn = document.getElementById('closeFormBtn');
+const offcanvas = document.getElementById('offcanvasExample');
+
+openFormBtn.addEventListener('click', () => {
+    offcanvas.classList.remove('hidden');
+    offcanvas.classList.add('translate-x-0');
+});
+
+closeFormBtn.addEventListener('click', () => {
+    offcanvas.classList.add('hidden');
+    offcanvas.classList.remove('translate-x-0');
 });

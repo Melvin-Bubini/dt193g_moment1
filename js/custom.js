@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 
 document.getElementById('scroll-btn').addEventListener('click', function (event) {
     event.preventDefault();
-    document.querySelector('#answers-section').scrollIntoView({behavior: 'smooth'});
+    document.querySelector('#answers-section').scrollIntoView({ behavior: 'smooth' });
 });
 
 document.getElementById("userForm").addEventListener('submit', function (event) {
@@ -20,8 +20,9 @@ document.getElementById("userForm").addEventListener('submit', function (event) 
     // Ta upp värden som lagts in i formuläret
     const firstname = document.getElementById('firstname').value;
     const age = document.getElementById('age').value;
-    const framework = document.getElementById('frameworkSelect').value;
     const textarea = document.getElementById('floatingTextarea').value;
+    const framework = document.getElementById('frameworkSelect').value;
+
 
     const userTable = document.getElementById('userTable').querySelector('tbody');
     const newRow = document.createElement('tr');
@@ -31,8 +32,8 @@ document.getElementById("userForm").addEventListener('submit', function (event) 
         <td>${userTable.rows.length + 1}</td>
         <td>${firstname}</td>
         <td>${age}</td>
-        <td>${framework}</td>
         <td>${textarea}</td>
+        <td>${framework}</td>
     `;
 
     // Append nya raden till tabellen
